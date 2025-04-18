@@ -1,0 +1,35 @@
+/* ───────────────────────── index.css (global layer) */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ---------- page chrome ---------- */
+
+html { scroll-behavior: smooth; }
+
+body{
+  @apply bg-black text-white;   /* black page, white copy */
+}
+
+/* ---------- animated gradient headline ---------- */
+@layer utilities{
+  .gradiant-text{
+    @apply bg-gradient-to-t from-blue-500 to-cyan-500 text-transparent;
+
+    -webkit-background-clip:text;
+    overflow:hidden;
+    border-right:2px solid #fff;
+    white-space:nowrap;
+    display:inline-block;
+    width:0;
+
+    /* typing & caret‑blink */
+    animation:
+      typing 3s steps(40) infinite,
+      blink  .3s step-end infinite;
+  }
+}
+
+@keyframes typing   { from{width:0;} to{width:350px;} }
+@keyframes blink    { 0%,100%{border-color:#fff;} 50%{border-color:transparent;} }
