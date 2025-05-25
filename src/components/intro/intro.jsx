@@ -19,10 +19,12 @@ export default function Intro() {
         <div className="mt-6 sm:mt-12 flex gap-4 flex-nowrap">
           <a
             href={resume}
-            download="Perry_Resume.pdf"
+            target="_blank"
+            rel="noreferrer"
+            // download="Perry_Resume.pdf"
             className="flex items-center justify-center rounded-full bg-gradient-to-t from-blue-500 to-cyan-500 px-8 py-5 hover:from-blue-700 hover:to-cyan-700"
           >
-            Download Resume
+            View Resume
           </a>
 
           <a
