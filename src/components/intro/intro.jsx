@@ -36,7 +36,7 @@ export default function Intro() {
           </a>
 
           <a
-            href="https://github.com/Perryongwq"
+            href="https://github.com/Perryong"
             target="_blank"
             rel="noreferrer"
             className="flex items-center justify-center rounded-full bg-gradient-to-t from-blue-500 to-cyan-500 px-8 py-5 hover:from-blue-700 hover:to-cyan-700"
